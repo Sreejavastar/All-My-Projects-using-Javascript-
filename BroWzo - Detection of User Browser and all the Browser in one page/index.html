@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BroWzo</title>
+</head>
+
+<body>
+    <div class="browseris">
+        <h2>You are on : </h2>&emsp;
+        <div class="logos">
+            <a href="https://www.google.com/intl/en_in/chrome/">
+            <img class="chrome" src="/img/001-chrome.png" alt="chrome" srcset="" title="Google Chrome">
+            </a>
+            <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img class="firefox" src="/img/002-firefox.png" alt="firefox" srcset="" title="Moxila firefox">
+            </a>
+            <a href="https://www.microsoft.com/en-us/edge">
+            <img class="edge" src="/img/003-microsoft.png" alt="edge" srcset="" title="Microsoft Edge">
+            </a>
+            <a href="https://www.opera.com/">
+            <img class="opera" src="/img/operamini.png" alt="opera" srcset="" title="Opera">
+            </a>
+            <a href="https://brave.com/">
+            <img class="brave" src="/img/004-lion.png" alt="brave" srcset="" title="Brave">
+            </a>
+            <a href="https://support.apple.com/downloads/safari">
+            <img class="safari" src="/img/002-safari.png" alt="safari" srcset="" title="Apple Safari">
+            </a>
+        </div>
+    </div>
+    <hr>
+    <script>
+        //Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Mobile Safari/537.36 Edg/103.0.1264.37"
+        let userAgent = navigator.userAgent;
+        let browser;
+        if (userAgent.match(/edge|Edg/i)) {
+            browser = "edge";
+        } else if (userAgent.match(/firefox|fxios/i)) {
+            browser = "firefox";
+        } else if (userAgent.match(/opr/i)) {
+            browser = "opera";
+        } 
+        else if (userAgent.match(/chrome|chromium|crios/i)) {
+            browser = "chrome";
+        } 
+        else if (userAgent.match(/Safari/i)) {
+            browser = "safari";
+        } 
+        else {
+            alert("Other browser");
+        }
+        console.log(browser);
+        const logo = document.querySelector(`.logos .${browser}`);
+        if (logo) {
+            logo.style.opacity = "1";
+        }
+    </script>
+
+
+</body>
+
+</html>
