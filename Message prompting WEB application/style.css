@@ -1,0 +1,92 @@
+/* //font import */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+body,html{
+    
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to bottom right, rgb(95, 89, 89), rgb(251, 149, 220));
+}
+.container{
+    background-color: rgb(16, 16, 16);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 34px;
+    box-shadow: 0 0 59px 0 rgba(0,0,0,0.9);
+
+}
+.container h1{
+    color: white;
+    font-family: 'Josefin Slab', serif;
+}
+#message-form{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+}
+.box{
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;
+    padding: 20px;
+    width: 500px;
+    border-radius: 13px;
+    background-color: rgb(243, 225, 225);
+    box-shadow: 0 0 5px 0 rgba(244, 215, 242, 0.9);
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.btn{
+    font-family: 'Josefin Slab', serif;
+    font-size: 1rem;
+    font-weight:800 ;
+    background-color: rgb(116, 55, 105);
+    padding: 8px;
+    /* width: 59px; */
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 221px; */
+    border: 1.5px solid black;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 rgba(236, 95, 225, 0.9);
+}
+
+.feedback{
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 32px;
+    padding: 18px;
+    justify-content: space-around;
+    display: none;
+    /* margin-left: 68px;  */
+}
+.not-show{
+    display: none;
+}
+.show{
+    display: block;
+}
+.l{
+    padding-top: 3px;
+}
+.message-content{
+    padding-top: 3px;
+    color: rgb(233, 128, 219);
+}
